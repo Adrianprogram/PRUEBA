@@ -1,0 +1,141 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    color: azure;
+    font-family: 'Rubik', sans-serif;
+}
+
+::-webkit-scrollbar {
+    width: 10px;
+    background: #c0aeae;
+}
+
+::-webkit-scrollbar-track-piece{
+    background-color: rgb(228, 228, 228);
+}
+::-webkit-scrollbar-thumb {
+    background:rgb(107, 99, 97);
+}
+
+header {
+    align-items: center;
+    justify-content: center;
+}
+body {
+    background-color: #222;
+}
+
+#icon {
+    padding-right: 10px;
+}
+nav {
+    display: flex;
+}
+#li-nav {
+    display: inline-block;
+    padding: 20px;
+}
+
+a {
+    text-decoration: none;
+    justify-content: space-around;
+    padding-right: 10px;
+    margin: 10px;
+}
+
+
+img {
+    display: block;
+    position: absolute;
+    right: 40px;
+}
+#content {
+    position: relative;
+    top: 10px;
+    left: 80px;
+    width: 80%;
+
+}
+h2 {
+    background-color: rgb(80, 80,80);
+    padding: 5px;
+    margin-bottom: 10px;
+}
+
+#muestra {
+     padding: 0px 100px 10px;
+}
+
+#li-main {
+    padding: 40px;
+}
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(3,400px);
+    grid-template-rows: repeat(200px,5);
+}
+.grid-item {
+    padding: 10px;
+}
+input {
+    color:azure;
+    background-color: rgba(1,1,1, 0);
+    border: 1px solid rgb(255, 0, 0);
+    border-radius: 4px;
+    padding: 4px;
+}
+input:valid {
+    color:azure;
+    background-color: rgba(1,1,1, 0);
+    border: 1px solid green;
+}
+input:active {
+    color:azure;
+    background-color: rgba(1,1,1, 0);
+    border: 1px solid green;
+}
+
+.caja  {
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    color: white;
+    background-color: black;
+    height: 100px;
+    width: 100px;
+    transition-property: left, background-color,color ;
+    transition-duration: 2s, 2s, 2s;
+    margin: 20px;
+    position: relative;
+    left: 0;
+}
+.container {
+    background-color: rgb(39, 83, 177);
+    padding: 20px 5px;
+}
+.container:hover > .caja {
+    left: 80%;
+    background-color: rgb(255, 255, 255);
+    color: rgb(0, 0, 0);
+}
+
+.caja:nth-child(1) {
+    transition-timing-function: linear;
+}
+
+.caja:nth-child(2) {
+    transition-timing-function: ease;
+}
+
+.caja:nth-child(3) {
+    transition-timing-function: ease-in;
+}
+
+.caja:nth-child(4) {
+    transition-timing-function: ease-out;
+}
+
+.caja:nth-child(5) {
+    transition-timing-function: ease-in-out;
+}
